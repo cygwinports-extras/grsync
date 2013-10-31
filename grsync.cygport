@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="grsync"
-VERSION=1.2.1
+VERSION=1.2.4
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="GTK+ rsync GUI"
