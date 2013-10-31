@@ -1,0 +1,17 @@
+inherit gnome2
+
+NAME="grsync"
+VERSION=1.2.1
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="GTK+ rsync GUI"
+DESCRIPTION="Grsync is a rsync GUI (Graphical User Interface). Rsync is the
+well-known and powerful command line directory and file synchronization tool.
+It can be effectively used to synchronize local directories and it supports
+remote targets as well."
+REQUIRES="rsync"
+HOMEPAGE="http://www.opbyte.it/grsync/"
+SRC_URI="mirror://sourceforge/grsync/${NAME}-${VERSION}.tar.gz"
+
+LDFLAGS+=" -Wl,--export-all"
+CYGCONF_ARGS="--disable-unity"
